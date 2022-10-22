@@ -3,7 +3,7 @@ class Soda_Machine:
   balance = 0
 
   def eject_soda(self):
-    if paid == False:
+    if self.paid == False:
       print('Please insert money')
     else:
       print('Enjoy the soda!')
@@ -12,7 +12,7 @@ class Soda_Machine:
     self.balance += amount
     
   def select_soda(self):
-    if balance >= 1:
+    if self.balance >= 1:
       self.paid = True
       self.balance -= 1
     else:
